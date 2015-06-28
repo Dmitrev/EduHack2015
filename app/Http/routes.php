@@ -20,7 +20,7 @@ Route::get('course', [
 ]);
 Route::get('/', 'TestController@index');
 
-Route::get('/issue/add', 'IssuesController@add');
+Route::get('/issue/add', ['as' => 'issue/add', 'uses' => 'IssuesController@add']);
 
 Route::post('issue/add', 'IssuesController@postAdd');
 

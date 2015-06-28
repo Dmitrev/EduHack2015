@@ -9,7 +9,13 @@
 					<div class="card-content">
 						<div class="avatar">
 							<img src="https://avatars3.githubusercontent.com/u/1228272?v=3&amp;s=460" class="circle left avy_100">
-							<p class="left">I need help with math!</p>
+							<div class="col left">
+								<span class="card-title grey-text">Wies Kueter</span>
+								<p>I need help with math!</p>
+								<span class="new badge">1</span>
+								<span class="new badge">1</span>
+								<span class="new badge">1</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -45,7 +51,7 @@
 				<div class="card">
 					<div class="card-content">
 						<h2>My issues</h2>
-						<a href="{{route('detail')}}" class="waves-effect waves-light btn">Add issue</a>
+						<a href="{{route('issue/add')}}" class="waves-effect waves-light btn">Add issue</a>
 						<div class="collection">
 							<a href="{{route('detail')}}" class="collection-item">Wiskunde <span class="new badge">20 new solutions</span></a>
 							<a class="collection-item">English <span class="new badge">12 issues</span></a>
