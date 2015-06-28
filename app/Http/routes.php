@@ -37,6 +37,6 @@ Route::get('profile', [
 
 Route::get('group', [
 	'as' => 'group/detail', 'uses' => 'GroupController@detail'
-]);]);
+]);
 
 Route::get('detail/{id}', 'CourseController@getId')->where('id', '[0-9]+');
