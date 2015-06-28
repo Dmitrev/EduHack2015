@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'TestController@index');
+
+Route::get('/issue/add', 'IssuesController@add');
+
+Route::post('issue/add', 'IssuesController@postAdd');
