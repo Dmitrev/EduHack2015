@@ -25,7 +25,9 @@ Route::get('/issue/add', 'IssuesController@add');
 Route::post('issue/add', 'IssuesController@postAdd');
 
 
-Route::get('course', 'CourseController@index');
+Route::get('course', [
+	'as' => 'course', 'uses' => 'CourseController@index'
+]);
 
 Route::get('detail', [
     'as' => 'detail', 'uses' => 'CourseController@detail'
