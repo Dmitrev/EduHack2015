@@ -20,12 +20,15 @@
 			<div class="card">
 				<div class="card-content">
 					<div class="row">
-						<div class="col s6">
-							<img src="https://avatars3.githubusercontent.com/u/1228272?v=3&amp;s=460" class="circle">
+						<div class="col s3">
+							<img src="https://avatars3.githubusercontent.com/u/1228272?v=3&amp;s=460" class="med circle">
 						</div>
-						<div class="col s6">
+						<div class="col s9">
 							<span class="card-title grey-text">Wies Kueter</span>
-							<h3>{{$issue->titel or '[Geen titel beschikbaar]'}}</h3>
+
+						</div>
+						<div class="col s12">
+							<h4>{{$issue->titel or '[Geen titel beschikbaar]'}}</h4>
 							<p>{{$issue->description or '[Geen description beschikbaar]'}}</p>
 						</div>
 					</div>
@@ -35,20 +38,32 @@
 	</div>
 	
 	<div class="container">
-		<div class="row card solutions">
-			
-			<ul class="collection with-header">
+		<div class="row solutions">
+
+
 				@for($i = 0; $i < 10; $i++)
-					<li class="avatar">
+					<div class="card">
 						<div class="collection-header">
-							<div class="row">
-								<div class="col s6">
-									<img src="https://avatars3.githubusercontent.com/u/1228272?v=3&amp;s=460" class="circle">
+							<div class="row top-padded">
+								<div class="col s3">
+									<img src="https://avatars3.githubusercontent.com/u/1228272?v=3&amp;s=460" class="small circle">
 								</div>
-								<div class="col s6">
+								<div class="col s7">
 									<span class="card-title grey-text">Dmitri</span>
+									<p>Dkadkj kja kjd aakjdf klj akj a</p>
 								</div>
-								<p>Dkadkj kja kjd aakjdf klj akj a</p>
+								<div class="col s2">
+									<div class="row less-margin">
+										<a class="btn-floating btn-large waves-effect waves-light green accent-2">
+											<i class="material-icons">check</i>
+										</a>
+										</div>
+									<div class="row">
+										<a class="btn-floating btn-large waves-effect waves-light red accent-1">
+											<i class="material-icons">clear</i>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 
@@ -56,13 +71,10 @@
 							<a href="#modal1" data-target="modal1" class="modal-trigger">Video</a> <a href="">Explaination</a>
 						</div>
 
-						<div class="">
-							<a class="btn-floating btn-large waves-effect waves-light red"></a>
-							<a class="btn-floating btn-large waves-effect waves-light green"></a>
-						</div>
-					</li>
+
+					</div>
 				@endfor
-			</ul>
+
 		</div>
 	</div>
 @stop

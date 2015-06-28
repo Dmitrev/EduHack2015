@@ -1,9 +1,31 @@
 @import "materialize";
 
+
+img{
+  max-width: 100%;
+
+  &.small{
+	max-width: 50px;
+	margin:1em 0 1em 2em;
+  }
+
+  &.med{
+	max-width: 80px;
+  }
+}
+
 .solution-documents{
 	background-color: #E8E8E8;
 }
 
 .modal-content iframe {
 	max-width: 100%;
+}
+
+.top-padded{
+  padding-top:1em;
+}
+
+.less-margin{
+  margin-bottom: 0.3em;
 }
