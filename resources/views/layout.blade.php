@@ -9,10 +9,11 @@
 </head>
 
 <body>
-
+@include('layout.header')
 @yield('content')
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/materialize.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/bin/materialize.min.js')}}"></script>
+@yield('js')
 </body>
 </html>
