@@ -15,8 +15,18 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('course', 'CourseController@index');
+Route::get('course', [
+	'as' => 'course', 'uses' => 'CourseController@index'
+]);
 
 Route::get('detail', [
     'as' => 'detail', 'uses' => 'CourseController@detail'
+]);
+
+Route::get('profile', [
+	'as' => 'profile/detail', 'uses' => 'ProfileController@detail'
+]);
+
+Route::get('group', [
+	'as' => 'group/detail', 'uses' => 'GroupController@detail'
 ]);

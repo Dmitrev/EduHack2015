@@ -35,12 +35,12 @@
 	</div>
 	
 	<div class="container">
-		<div class="row card solutions">
+		<div class="row solutions">
 			
-			<ul class="collection with-header">
+			<ul class="collection">
 				@for($i = 0; $i < 10; $i++)
 					<li class="avatar">
-						<div class="collection-header">
+						<div class="">
 							<div class="row">
 								<div class="col s6">
 									<img src="https://avatars3.githubusercontent.com/u/1228272?v=3&amp;s=460" class="circle">
@@ -49,16 +49,15 @@
 									<span class="card-title grey-text">Dmitri</span>
 								</div>
 								<p>Dkadkj kja kjd aakjdf klj akj a</p>
+								<div class="">
+									<a class="btn-floating btn-large waves-effect waves-light red"></a>
+									<a class="btn-floating btn-large waves-effect waves-light green"></a>
+								</div>
 							</div>
 						</div>
 
 						<div class="solution-documents card-action">
 							<a href="#modal1" data-target="modal1" class="modal-trigger">Video</a> <a href="">Explaination</a>
-						</div>
-
-						<div class="">
-							<a class="btn-floating btn-large waves-effect waves-light red"></a>
-							<a class="btn-floating btn-large waves-effect waves-light green"></a>
 						</div>
 					</li>
 				@endfor
