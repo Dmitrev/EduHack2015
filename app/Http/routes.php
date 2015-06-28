@@ -11,7 +11,13 @@
 |
 */
 
+Route::get('/', function () {
+    return view('home');
+});
 
+Route::get('course', [
+	'as' => 'course', 'uses' => 'CourseController@index'
+]);
 Route::get('/', 'TestController@index');
 
 Route::get('/issue/add', 'IssuesController@add');
@@ -24,5 +30,13 @@ Route::get('course', 'CourseController@index');
 Route::get('detail', [
     'as' => 'detail', 'uses' => 'CourseController@detail'
 ]);
+
+Route::get('profile', [
+	'as' => 'profile/detail', 'uses' => 'ProfileController@detail'
+]);
+
+Route::get('group', [
+	'as' => 'group/detail', 'uses' => 'GroupController@detail'
+]);]);
 
 Route::get('detail/{id}', 'CourseController@getId')->where('id', '[0-9]+');
