@@ -25,8 +25,8 @@
 						</div>
 						<div class="col s6">
 							<span class="card-title grey-text">Wies Kueter</span>
-							<h3>Hoe bouw ik een hut?</h3>
-							<p>Ik wil een hut bouwen maar weet niet zo goed hoe ik moet geginnen..</p>
+							<h3>{{$issue->titel or '[Geen titel beschikbaar]'}}</h3>
+							<p>{{$issue->description or '[Geen description beschikbaar]'}}</p>
 						</div>
 					</div>
 				</div>

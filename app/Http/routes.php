@@ -11,20 +11,18 @@
 |
 */
 
-<<<<<<< HEAD
+
 Route::get('/', 'TestController@index');
 
 Route::get('/issue/add', 'IssuesController@add');
 
 Route::post('issue/add', 'IssuesController@postAdd');
-=======
-Route::get('/', function () {
-    return view('home');
-});
+
 
 Route::get('course', 'CourseController@index');
 
 Route::get('detail', [
     'as' => 'detail', 'uses' => 'CourseController@detail'
 ]);
->>>>>>> 9b28d00515ca6805dfbd79ad71a992ae39f10d99
+
+Route::get('detail/{id}', 'CourseController@getId')->where('id', '[0-9]+');
