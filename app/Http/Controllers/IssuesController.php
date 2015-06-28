@@ -24,10 +24,13 @@ class IssuesController extends Controller{
             die("The file doesn't exist");
         }
 
+        $newId = count($issues) + 1;
 
         $issues[] = array(
-            'title' => Input::get('title'),
-            'desc' => Input::get('description')
+            'id' => $newId,
+            'titel' => Input::get('title'),
+            'description' => Input::get('description'),
+            'vakid' => 5
         );
 
         $issues = json_encode($issues);
@@ -35,6 +38,6 @@ class IssuesController extends Controller{
 
         File::put('json/issues.json', $issues );
 
-        return Redirect::to('issue/add');
+        return Redirect::to('detail/'.$newId);
     }
 }
