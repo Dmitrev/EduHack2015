@@ -12,10 +12,27 @@
 							<div class="col left">
 								<span class="card-title grey-text">Wies Kueter</span>
 								<p>I need help with math!</p>
-								<span class="new badge">1</span>
-								<span class="new badge">1</span>
-								<span class="new badge">1</span>
 							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<h2>My issues</h2>
+						<a href="{{route('issue/add')}}" class="waves-effect waves-light btn">Add issue</a>
+						<div class="collection">
+							<a href="{{route('detail')}}" class="collection-item">Wiskunde <span class="new badge">20 new solutions</span></a>
+							<a class="collection-item">English <span class="new badge">12 issues</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-content">
+						<h2 class="header">Solved by me</h2>
+						<div class="collection">
+							<a href="{{route('detail')}}" class="collection-item">What is the remainder when 6×732+7×945 is divided by 4?</a>
+							<a class="collection-item">How to find the L.C.M. of 152, 6 and 5?</a>
 						</div>
 					</div>
 				</div>
@@ -40,34 +57,6 @@
 						    <li class="waves-effect"><a href="#!">4</a></li>
 						    <li class="waves-effect"><a href="#!">5</a></li>
 						    <li class="waves-effect"><a href="#!"><i class="material-icons"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col s12 m6 l6">
-				<div class="card">
-					<div class="card-content">
-						<h2>My issues</h2>
-						<a href="{{route('issue/add')}}" class="waves-effect waves-light btn">Add issue</a>
-						<div class="collection">
-							<a href="{{route('detail')}}" class="collection-item">Wiskunde <span class="new badge">20 new solutions</span></a>
-							<a class="collection-item">English <span class="new badge">12 issues</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col s12 m6 l6">
-				<div class="card">
-					<div class="card-content">
-						<h2 class="header">My groups</h2>
-						<a class="waves-effect waves-light btn">Start group</a>
-						<ul class="collection">
-							<li class="collection-item">Wiskunde <span class="new badge">20 issues</span></li>
-							<li class="collection-item">English <span class="new badge">12 issues</span></li>
 						</ul>
 					</div>
 				</div>
